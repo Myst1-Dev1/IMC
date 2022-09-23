@@ -33,6 +33,11 @@
            background-color: lightgreen;
            padding: 30px;
            border-radius: 20px;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           flex-direction: column;
+           gap: 12px;
          }
 
          input{
@@ -125,28 +130,26 @@
         <div class="menu">
 
             <h1>Calculadora - IMC</h1>
-            <hr>
-            <br>
-           
-         <label>Nome:</label>&ensp;&ensp;&ensp;
-         <input id="name" type="text" name="nome">
-             <br>
-         <label>Altura:</label>&ensp;&ensp;&ensp;
-         <input id="altura" type="number" name="altura">
-           <br>
-         <label>peso:</label>&ensp;&ensp;&ensp;&ensp;
-         <input id="peso" type="number" name="peso">
-
-         <br><br>
-        
-           <button onclick="IMC()">Calcular</button>
             
-           <br><br>
+           
+            <div>
+                <label>Nome:</label>
+                <input id="name" type="text" name="nome">
+            </div>
 
-           <div id="resultado">
-             
+            <div>
+                <label>Altura:</label>
+                <input id="altura" type="number" name="altura">
+            </div>
 
-        </div>
+            <div>
+                <label>peso:</label>
+                <input id="peso" type="number" name="peso">
+            </div>
+    
+            <button onclick="IMC()">Calcular</button>
+
+            <div id="resultado"></div>
 
         </div>
 
